@@ -17,7 +17,6 @@ void print_square(int size)
 		{
 			while (rows--)
 			{
-				
 				_putchar(35);
 			}
 			_putchar(10);
