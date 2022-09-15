@@ -51,3 +51,4 @@ Task 11. The problem of distinguishing prime numbers from composite numbers and 
 Task 12. Numbers have life; they're not just symbols on paper - Write a function that prints an integer.
 
 .
+.
