@@ -2,6 +2,8 @@
 
 /*
 * main - print magic
+*
+* @void: function
 */
 
 int main(void)
