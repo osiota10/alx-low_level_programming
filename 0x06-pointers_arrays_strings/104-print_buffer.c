@@ -13,7 +13,7 @@
 void print_line(char *c, int s, int l)
 {
 	int j, k;
-	
+
 	for (j = 0; j <= 9; j++)
 	{
 		if (j <= s)
@@ -60,4 +60,3 @@ void print_buffer(char *b, int size)
 	}
 	if (size == 0)
 	putchar('\n');
-}
