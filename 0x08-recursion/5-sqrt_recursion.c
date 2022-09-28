@@ -19,3 +19,18 @@ int _sqrt(int x, int y)
 	else
 		return (1 + _sqrt(sum, y + 2));
 }
+
+/**
+ * _sqrt_recursion - evaluate sqrt
+ * @n: interger
+ * Return: result
+ */
+int _sqrt_recursion(int n)
+{
+	if (n < 0)
+		return (-1);
+	if (n == 0)
+		return (0);
+	if (n == 1)
+		return (1);
+	return (_sqrt(n, 1));
