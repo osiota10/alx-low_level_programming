@@ -8,7 +8,6 @@
 
 int _sqrt(int x, int y)
 {
-	
 	int sum;
 
 	sum = x - y;
@@ -19,4 +18,3 @@ int _sqrt(int x, int y)
 		return (1);
 	else
 		return (1 + _sqrt(sum, y + 2));
-}
