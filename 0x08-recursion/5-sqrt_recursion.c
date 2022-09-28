@@ -1,37 +1,43 @@
 #include "main.h"
 /**
-* _sqrt - function that returns the natural square root of a number
-* @x: number
-* @y: number
-* Return: sum
-*/
+ *_evaluate - evaluate function sqrt
+ *@i: interger
+ *@n: interger
+ *Return: evaluate sqrt
+ */
 
-int _sqrt(int x, int y)
+int _evaluate(int i, int n)
 {
-	int sum;
+	/*Evaluate function*/
+	if (n == 0 || n == 1)
+	return (n);
 
-	sum = x - y;
-	if (sum < 0)
-	{
-		return (-(y / 2) - 1);
-	if (sum == 0)
-		return (1);
-	else
-		return (1 + _sqrt(sum, y + 2));
+	else if (i * i < n)
+	return (_evaluate(i + 1, n));
+
+	else if (i * i == n) /*Condiction base*/
+	return (i);
+
+	return (-1);
+
+	return (-1);
 }
 
 /**
- * _sqrt_recursion - evaluate sqrt
- * @n: interger
- * Return: result
- */
+ *_sqrt_recursion - evaluate sqrt
+ *@n: interger
+ *Return: Sgrt_recursion
+*/
+
 int _sqrt_recursion(int n)
 {
-	if (n < 0)
-		return (-1);
-	if (n == 0)
-		return (0);
-	if (n == 1)
-		return (1);
-	return (_sqrt(n, 1));
+	int i = 0;
+
+	if (i < 0) /*If n is negative*/
+	return (-1);
+
+	else
+	{
+		return (_evaluate(i, n)); 	/*Recursive call*/
+	}
 }
