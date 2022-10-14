@@ -23,3 +23,13 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 		x = va_arg(list, char *);
 
+		if (x == NULL)
+		{
+			printf("(nil)");
+		}
+		else
+		{
+			printf("%s", x);
+		}
+	}
+	putchar(10);
